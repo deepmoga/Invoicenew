@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Date: Thu, 23 Jul 2026 18:31:35 GMT
+Content-Type: application/pdf
+Content-Length: 128852
+Connection: keep-alive
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Sm80NqRYDIdcFm4BGhUwXgxpD3EieEFWvrFgWYwJOWtGM5uGXMxNzDHpEOuq%2B5f1lWddT8k2wR14oQytSr7t%2Bx6JqLd9YarZRJ0NQTJEWeGsVCphYaoP%2BXBrwtPrT1VVOgg4wMD0XOAXikA%3D"}]}
+Content-Disposition: attachment; filename="BITTU FAX STD PCO 2026-07-20.pdf"
+Cache-Control: private, no-store
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+X-turbo-charged-by: LiteSpeed
+cf-cache-status: DYNAMIC
+CF-RAY: a1fcc34a0a870d9e-DEL
+alt-svc: h3=":443"; ma=86400
+

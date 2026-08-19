@@ -1,0 +1,24 @@
+.item-description {
+  margin: 9px 0 0;
+  padding-left: 20px;
+  color: #263244;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.item-description li {
+  margin: 4px 0;
+  padding-left: 3px;
+}
+
+.item-description li::marker {
+  color: #172033;
+  font-size: 1.05em;
+}
+
+@media (max-width: 600px) {
+  .item-description {
+    min-width: 210px;
+    font-size: 12px;
+  }
+}

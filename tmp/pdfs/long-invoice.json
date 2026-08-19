@@ -1,0 +1,31 @@
+{
+  "document_type": "INVOICE",
+  "company_name": "Official Digital Marketing",
+  "company_address": "Moga, Punjab",
+  "company_email": "accounts@example.com",
+  "company_phone": "9780551900",
+  "company_gstin": "03DESPS9368C1ZX",
+  "customer_name": "Long Description Test Customer",
+  "customer_business": "SFC Institute of Management and Technology",
+  "customer_address": "Moga, Punjab, 142001",
+  "customer_gstin": "03TEST0000T1Z1",
+  "number": "INV-TEST",
+  "invoice_date": "2026-07-23",
+  "due_date": "2026-07-30",
+  "subtotal": 18000,
+  "gst_enabled": 1,
+  "tax_total": 3240,
+  "total": 21240,
+  "lines": [
+    {
+      "name": "Digital Marketing Service",
+      "description": "Website audit, keyword research, competitor research, and technical SEO recommendations for the complete website.\nOn-page optimization covering page titles, meta descriptions, headings, internal linking, image alternative text, schema markup, crawlability, and indexation checks.\nContent planning and monthly editorial calendar with topic clusters, search intent mapping, primary keywords, secondary keywords, and conversion-focused calls to action.\nFour detailed articles every month including research, writing, proofreading, formatting, royalty-free images, internal links, and publication support.\nLocal SEO management including Google Business Profile updates, products and services, categories, business descriptions, photos, posts, questions and answers, and review monitoring.\nBacklink research and outreach planning covering relevant directories, citations, niche resources, content partnerships, and link quality monitoring.\nTechnical monitoring for broken links, redirect chains, duplicate pages, canonical tags, XML sitemap, robots rules, structured data warnings, mobile usability, and Core Web Vitals.\nMonthly reporting covering organic traffic, conversions, keyword movement, landing page performance, indexing status, backlink changes, completed work, and next-month priorities.\nSocial media strategy for Facebook and Instagram including monthly content themes, creative direction, captions, hashtags, scheduling guidance, and engagement recommendations.\nCampaign planning for lead generation including audience research, ad structure, creative recommendations, landing-page review, tracking requirements, and weekly optimization notes.\nThe service description intentionally contains enough detail to continue across pages and verify that the generated PDF does not fail when an item has a very long description.\nAdditional implementation notes, review checkpoints, reporting expectations, communication procedures, and delivery standards are included for robust multi-page PDF validation.",
+      "quantity": 1,
+      "price": 18000,
+      "amount": 18000,
+      "gst_rate": 18
+    }
+  ],
+  "notes": "Payment is due within seven days.\nPlease mention the invoice number with your payment.",
+  "bank_details": "ICICI Bank - Account 659905601073 - IFSC ICIC0006599"
+}
