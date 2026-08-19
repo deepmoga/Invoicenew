@@ -1,4 +1,4 @@
-import base64, io, json, sys, re
+import base64, io, json, sys, re, html
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_RIGHT, TA_CENTER
 from reportlab.lib.pagesizes import A4
@@ -24,7 +24,7 @@ def money(value):
 def parse_description_bullets(raw_desc):
     if not raw_desc:
         return []
-    s = str(raw_desc).strip()
+    s = html.unescape(str(raw_desc).strip())
     if not s:
         return []
     if "<li" in s.lower():
