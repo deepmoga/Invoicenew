@@ -15,9 +15,9 @@ mkdirSync(path.join(root, 'uploads'), { recursive: true });
 
 const pool = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASS || '',
-  database: process.env.DB_NAME || 'nfcinvoice',
+  user: process.env.DB_USER || 'exopfnhh_nfcinvoice',
+  password: process.env.DB_PASS !== undefined ? process.env.DB_PASS : 'Official@12345',
+  database: process.env.DB_NAME || 'exopfnhh_nfcinvoice',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
