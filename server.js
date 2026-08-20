@@ -13,18 +13,11 @@ const root = process.cwd();
 mkdirSync(path.join(root, 'data'), { recursive: true });
 mkdirSync(path.join(root, 'uploads'), { recursive: true });
 
-const envUser = process.env.DB_USER;
-const dbUser = (!envUser || envUser === 'root') ? 'exopfnhh_nfcinvoice' : envUser;
-const envPass = process.env.DB_PASS;
-const dbPass = (!envPass || envPass === '') ? 'Official@12345' : envPass;
-const envName = process.env.DB_NAME;
-const dbName = (!envName || envName === 'invoice_crm' || envName === 'nfcinvoice') ? 'exopfnhh_nfcinvoice' : envName;
-
 const pool = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
-  user: dbUser,
-  password: dbPass,
-  database: dbName,
+  user: process.env.DB_USER && process.env.DB_USER !== 'root' ? process.env.DB_USER : 'exopfnhh_nfcinvoice',
+  password: process.env.DB_PASS || 'Official@12345',
+  database: process.env.DB_NAME && process.env.DB_NAME !== 'invoice_crm' && process.env.DB_NAME !== 'nfcinvoice' ? process.env.DB_NAME : 'exopfnhh_nfcinvoice',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
