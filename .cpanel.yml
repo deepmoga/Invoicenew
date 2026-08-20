@@ -1,7 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/exopfnhh/nfc.officialsolutions.in/Project/
-    - /bin/cp -R * $DEPLOYPATH
-    - mkdir -p $DEPLOYPATH/tmp
-    - touch $DEPLOYPATH/tmp/restart.txt
+    - export DEPLOYPATH1=/home/exopfnhh/nfc.officialsolutions.in/Project/
+    - export DEPLOYPATH2=/home/exopfnhh/nfc.officialsolutions.in/public_html/
+    - /bin/cp -R * $DEPLOYPATH1 2>/dev/null || true
+    - /bin/cp -R * $DEPLOYPATH2 2>/dev/null || true
+    - mkdir -p $DEPLOYPATH1/tmp $DEPLOYPATH2/tmp
+    - touch $DEPLOYPATH1/tmp/restart.txt $DEPLOYPATH2/tmp/restart.txt
