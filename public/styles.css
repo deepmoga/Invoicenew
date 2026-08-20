@@ -23,6 +23,7 @@ body{font-weight:400}label{font-weight:500}input,select,textarea{font-weight:400
   background: #fff;
   overflow: hidden;
   margin-top: 4px;
+  font-weight: 400 !important;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .rte-container:focus-within {
@@ -95,8 +96,18 @@ body{font-weight:400}label{font-weight:500}input,select,textarea{font-weight:400
   font-family: inherit;
   font-size: 14px;
   line-height: 1.5;
+  font-weight: 400 !important;
   color: var(--ink);
   overflow-y: auto;
+}
+.rte-editor b, .rte-editor strong {
+  font-weight: 700 !important;
+}
+.rte-editor i, .rte-editor em {
+  font-style: italic !important;
+}
+.rte-editor u {
+  text-decoration: underline !important;
 }
 .rte-editor[contenteditable="true"]:empty:before {
   content: attr(data-placeholder);
