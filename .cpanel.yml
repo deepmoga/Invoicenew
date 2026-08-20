@@ -3,3 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/exopfnhh/nfc.officialsolutions.in/Project/
     - /bin/cp -R * $DEPLOYPATH
+    - mkdir -p $DEPLOYPATH/tmp
+    - touch $DEPLOYPATH/tmp/restart.txt
